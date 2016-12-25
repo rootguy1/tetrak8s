@@ -1,5 +1,6 @@
-# kubernetes-101
-Tutorial to build and deploy a simple Python app in Kubernetes. The walkthrough is available [here](https://youtu.be/zeS6OyDoy78).
+# tetrak8s
+Tutorial to deploy KONG As API Gateway with Kubernetes
+
 
 Make sure that you have access to a Kubernetes cluster.
 
@@ -8,16 +9,6 @@ Make sure that you have access to a Kubernetes cluster.
 cd Docker
 docker build . -t <DOCKER_HUB_USER>/web
 docker push <DOCKER_HUB_USER>/web
-```
-
-## Launch the app with Docker Compose
-```
-docker-compose up -d 
-```
-
-## Test the app
-```
-curl localhost:5000
 ```
 
 ## Deploy the app to Kubernetes
